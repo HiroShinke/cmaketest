@@ -31,7 +31,10 @@ jobs:
           cd build/
           cmake ..
           make
-      - name: test
+      - name: test1
         run: |
           build/main_app
+      - name: test2
+        run: |
+          build/example
   
