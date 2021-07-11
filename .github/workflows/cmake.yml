@@ -31,3 +31,7 @@ jobs:
           cd build/
           cmake ..
           make
+      - name: test
+        run: |
+          build/main_app
+  
