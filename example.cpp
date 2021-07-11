@@ -7,7 +7,7 @@ class Example : public ::testing::TestWithParam<int> { };
 TEST_P(Example, ExampleTest)
 {
     int i = GetParam();
-    ASSERT_TRUE(1 == 1);
+    ASSERT_TRUE(i == i);
 }
 
-INSTANTIATE_TEST_CASE_P(ExampleCategory, Example, ::testing::Range(0, 0));
+INSTANTIATE_TEST_CASE_P(ExampleCategory, Example, ::testing::Range(0, 2));
